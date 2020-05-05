@@ -1,24 +1,23 @@
-import React from 'react';
-import logo from './logo.svg';
+import React, { Fragment, useEffect } from "react";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import Navigationbar from "./components/layouts/NavigationBar/NavigationBar.jsx";
+import Landing from "./components/pages/Landing/Landing.jsx";
+import PWAPrompt from "react-ios-pwa-prompt";
+
 import './App.css';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="container-fluid">
+      <Router>
+        <Navigationbar />
+        <Switch>
+          <Route exact path="/" component={Landing} />
+          {/* <Route exact path="/about-me" component={AboutMe} />
+          <Route exact path="/education" component={Education} /> */}
+        </Switch>
+      </Router>
+      <PWAPrompt />
     </div>
   );
 }
