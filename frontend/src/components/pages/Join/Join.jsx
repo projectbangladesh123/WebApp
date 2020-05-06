@@ -124,7 +124,10 @@ const Join = props => {
                             placeholder="Your institution" />
                     </div>
                     <div className="col">
-                        <input type="text" className="form-control" placeholder="Last name" />
+                        <input 
+                            type="text" 
+                            className="form-control" 
+                            placeholder="Yearn And Semester" />
                     </div>
                 </div>
                 <div className="form-group">
