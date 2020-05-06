@@ -34,7 +34,7 @@ const Landing = (props) => {
         </div>
       </section>
 
-      <section className="section_background second_section">
+      <section className="section_background">
         <h1>Upcoming Events</h1>
         <div className = "events">
           <Card style={{ width: "18rem" }}>

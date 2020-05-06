@@ -1,0 +1,82 @@
+.Contact {
+  padding-top: 6rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.Contact .alert {
+  background-color: green;
+  font-weight: bold;
+  padding: 0;
+  text-align: center;
+  margin-top: 2rem;
+  color: white;
+}
+
+.Contact .negative_alert {
+  background-color: red;
+}
+
+.Contact .icons {
+  margin-bottom: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 2rem;
+}
+
+.Contact .icons a {
+  cursor: pointer;
+}
+
+.Contact .icons .icon {
+  margin-right: 2rem;
+  size: 100px;
+}
+
+.Contact .connect-us {
+  margin-top: 2rem;
+}
+
+.Contact .connect-us h1 {
+  text-align: center;
+}
+
+.Contact .btn {
+  width: 100%;
+  text-align: center;
+  margin-top: 1rem;
+}
+
+@media screen and (min-width: 768px) {
+  .Contact {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .Contact {
+    padding-top: 8rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .Contact {
+    padding-left: 4rem;
+    padding-right: 4rem;
+  }
+}
+/*# sourceMappingURL=Contact.css.map */

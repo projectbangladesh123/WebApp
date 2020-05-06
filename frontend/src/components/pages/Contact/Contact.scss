@@ -1,0 +1,70 @@
+.Contact {
+  padding-top: 6rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+
+  .alert{
+    background-color: green;
+    font-weight: bold;
+    padding: 0;
+    text-align: center;
+    margin-top: 2rem;
+    color: white;
+  }
+
+  .negative_alert{
+      background-color: red;
+  }
+
+  .icons{
+      a{
+          cursor: pointer;
+      }
+      margin-bottom: 2rem;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+      margin-top: 2rem;
+
+      .icon{
+          margin-right: 2rem;
+          size: 100px;
+      }
+  }
+
+  .connect-us{
+      margin-top: 2rem;
+      h1{
+          text-align: center;
+      }
+  }
+
+  .btn {
+    width: 100%;
+    text-align: center;
+    margin-top: 1rem;
+  }
+}
+
+@media screen and (min-width: 768px) {
+    .Contact{
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .Contact{
+        padding-top: 8rem;
+        padding-left: 3rem;
+        padding-right: 3rem;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .Contact{
+        padding-left: 4rem;
+        padding-right: 4rem;
+    }
+}

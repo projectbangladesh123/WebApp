@@ -31,7 +31,7 @@ const Navigationbar = () => {
                 {/* Right side nav items */}
                 <Nav className="ml-auto link-items">
                     <Nav.Link as={Link} to="/about-us" className="nav-item-link">About Us</Nav.Link>
-                    <Nav.Link href="#link" className="nav-item-link">Contact</Nav.Link>
+                    <Nav.Link as={Link} to="/contact" className="nav-item-link" onClick={() => setExpanded(false)}>Contact</Nav.Link>
                     <Nav.Link  href="#home">
                         <Button variant="outline-dark">
                             Blog

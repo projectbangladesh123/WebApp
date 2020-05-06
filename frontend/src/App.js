@@ -2,6 +2,7 @@ import React, { Fragment, useEffect } from "react";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import Navigationbar from "./components/layouts/NavigationBar/NavigationBar.jsx";
 import Landing from "./components/pages/Landing/Landing.jsx";
+import Contact from "./components/pages/Contact/Contact.jsx";
 import PWAPrompt from "react-ios-pwa-prompt";
 import Footer from "./components/layouts/Footer/Footer.jsx";
 
@@ -14,11 +15,12 @@ function App() {
         <Navigationbar />
         <Switch>
           <Route exact path="/" component={Landing} />
+          <Route exact path="/contact" component={Contact} />
           {/* <Route exact path="/about-me" component={AboutMe} />
           <Route exact path="/education" component={Education} /> */}
         </Switch>
       </Router>
-      <Footer/>
+      <Footer />
       <PWAPrompt />
     </div>
   );
