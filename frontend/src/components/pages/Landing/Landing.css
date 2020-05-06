@@ -47,9 +47,31 @@
   height: 100%;
 }
 
+.Landing .buttons {
+  margin-top: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.Landing .buttons .second_button {
+  margin-top: 1rem;
+}
+
 .Landing .rounded_image {
   border-radius: 50%;
-  width: 20px;
+  width: 100px;
+  margin-right: 1rem;
 }
 
 .Landing .section_background {

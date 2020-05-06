@@ -54,6 +54,7 @@ const Landing = (props) => {
         </div>
         <div className="buttons">
           <Button variant="primary" as={Link} to="/">Visit Our Blog Site</Button>
+          <Button variant="success" as={Link} to="/" className="second_button">Join Us</Button>
           
         </div>
       </section>

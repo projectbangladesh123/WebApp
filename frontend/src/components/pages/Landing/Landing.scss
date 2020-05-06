@@ -40,9 +40,21 @@
     height: 100%;
   }
 
+  .buttons{
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    .second_button{
+      margin-top: 1rem;
+    }
+  }
+
   .rounded_image{
       border-radius: 50%;
-      width: 20px;
+      width: 100px;
+      margin-right: 1rem;
   }
 
   .section_background{
@@ -55,6 +67,7 @@
       }
  
   }
+  
 
   .events{
       margin-top: 1rem;
