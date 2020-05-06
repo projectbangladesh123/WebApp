@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import Navigationbar from "./components/layouts/NavigationBar/NavigationBar.jsx";
 import Landing from "./components/pages/Landing/Landing.jsx";
 import PWAPrompt from "react-ios-pwa-prompt";
+import Footer from "./components/layouts/Footer/Footer.jsx";
 
 import './App.css';
 
@@ -17,6 +18,7 @@ function App() {
           <Route exact path="/education" component={Education} /> */}
         </Switch>
       </Router>
+      <Footer/>
       <PWAPrompt />
     </div>
   );

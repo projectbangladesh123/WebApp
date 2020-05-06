@@ -1,4 +1,97 @@
 .Landing {
-  padding-top: 4rem;
+  padding-top: 5rem;
+}
+
+.Landing .landing {
+  position: relative;
+  background: url("background.gif") no-repeat center center/cover;
+  height: 50vh;
+  background-position: center;
+  background-size: cover;
+}
+
+.Landing .landing-inner {
+  color: #fff;
+  height: 100%;
+  width: 100%;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  text-align: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.Landing .landing-inner h1 {
+  font-size: 4rem;
+}
+
+.Landing .dark-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.Landing .rounded_image {
+  border-radius: 50%;
+  width: 20px;
+}
+
+.Landing .section_background {
+  background-color: #d9faff;
+  padding-top: 1rem;
+  text-align: center;
+  padding-bottom: 2rem;
+}
+
+.Landing .section_background h1 {
+  font-weight: bolder;
+}
+
+.Landing .events {
+  margin-top: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+@media screen and (min-width: 768px) {
+  .Landing .landing {
+    background-size: cover;
+    height: 60vh;
+  }
+  .Landing .section_background {
+    top: 0;
+  }
+  .Landing .section_background h1 {
+    font-size: 3rem;
+  }
 }
 /*# sourceMappingURL=Landing.css.map */

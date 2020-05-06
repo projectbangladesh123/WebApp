@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 // import { connect } from "react-redux";
-import { Navbar, Nav } from 'react-bootstrap';
+import { Navbar, Nav, Button } from 'react-bootstrap';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faLaptopCode } from "@fortawesome/free-solid-svg-icons";
 import "./NavigationBar.css"
@@ -18,26 +18,30 @@ const Navigationbar = () => {
     // ml-auto allign items to the right
     const [expandedProp, setExpanded] = useState(false)
     return (
-        <Navbar collapseOnSelect fixed="top" bg="dark" variant="dark" expand="lg" expanded={expandedProp} onToggle={() => setExpanded(expandedProp ? false : true)}>
-            <Navbar.Brand as={Link} to="/" eventKey="8" onClick={() => setExpanded(false)}>
+        <Navbar collapseOnSelect fixed="top" bg="white" variant="light" expand="md" expanded={expandedProp} onToggle={() => setExpanded(expandedProp ? false : true)}>
+            <Navbar.Brand as={Link} to="/"  onClick={() => setExpanded(false)}>
                 {" "}
-                <FontAwesomeIcon icon={faLaptopCode} className="brand-icon" />
-          Project Bangladesh
+                <img src="brandLogo.svg" alt="icon" className="logo" /> 
         </Navbar.Brand>
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
             <Navbar.Collapse id="basic-navbar-nav">
-                <Nav className="mr-auto link-items">
-                    <Nav.Link as={Link} to="/about-me" className = "nav-item-link">About Me</Nav.Link>
-                    <Nav.Link href="#link" >Work Experience</Nav.Link>
-                    <Nav.Link href="#link" >Portfolio</Nav.Link>
-                    <Nav.Link as={Link} to="/education" >Education</Nav.Link>
-                    <Nav.Link href="https://github.com/shafirpl/" target="_blank">
-                        GitHub
-            </Nav.Link>
-                </Nav>
+                {/* left side nav items */}
+                {/* <Nav className="mr-auto link-items">
+                </Nav> */}
+                {/* Right side nav items */}
                 <Nav className="ml-auto link-items">
-                    <Nav.Link  href="#home">Resume</Nav.Link>
-                    <Nav.Link  href="#link">Contact</Nav.Link>
+                    <Nav.Link as={Link} to="/about-us" className="nav-item-link">About Us</Nav.Link>
+                    <Nav.Link href="#link" className="nav-item-link">Contact</Nav.Link>
+                    <Nav.Link  href="#home">
+                        <Button variant="outline-dark">
+                            Blog
+                        </Button>
+                    </Nav.Link>
+                    <Nav.Link href="#link">
+                        <Button variant="outline-dark">
+                            Join Us
+                        </Button>
+                    </Nav.Link>
                 </Nav>
             </Navbar.Collapse>
         </Navbar>

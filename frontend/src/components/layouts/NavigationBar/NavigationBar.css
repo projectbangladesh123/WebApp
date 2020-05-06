@@ -2,4 +2,62 @@
 .navbar-dark .navbar-nav .nav-link {
   color: white;
 }
+
+.logo {
+  width: 4.5rem;
+}
+
+.nav-item-link {
+  padding-top: 1rem;
+  color: black !important;
+}
+
+.nav-item-link:hover {
+  color: gray !important;
+}
+
+@media screen and (min-width: 360px) {
+  .logo {
+    width: 5rem;
+  }
+}
+
+@media screen and (min-width: 800px) {
+  .navbar-brand {
+    margin-left: 3rem;
+  }
+  .link-items {
+    margin-right: 3rem;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .navbar-brand {
+    margin-left: 5rem;
+  }
+  .link-items {
+    margin-right: 5rem;
+  }
+  .logo {
+    width: 6rem;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .navbar-brand {
+    margin-left: 7rem;
+  }
+  .link-items {
+    margin-right: 7rem;
+  }
+  .logo {
+    width: 7rem;
+  }
+}
+
+.btn-outline-dark:hover {
+  color: gray;
+  background-color: white;
+  border-color: black;
+}
 /*# sourceMappingURL=NavigationBar.css.map */
