@@ -37,6 +37,7 @@
 
 .Contact .icons a {
   cursor: pointer;
+  color: inherit;
 }
 
 .Contact .icons .icon {

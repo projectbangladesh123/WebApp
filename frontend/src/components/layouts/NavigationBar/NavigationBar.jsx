@@ -2,8 +2,6 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 // import { connect } from "react-redux";
 import { Navbar, Nav, Button } from 'react-bootstrap';
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faLaptopCode } from "@fortawesome/free-solid-svg-icons";
 import "./NavigationBar.css"
 
 
@@ -37,7 +35,7 @@ const Navigationbar = () => {
                             Blog
                         </Button>
                     </Nav.Link>
-                    <Nav.Link href="#link">
+                    <Nav.Link as = {Link} to = "/join">
                         <Button variant="outline-dark">
                             Join Us
                         </Button>
