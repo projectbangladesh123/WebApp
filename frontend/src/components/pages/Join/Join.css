@@ -1,4 +1,53 @@
 .Join {
-  padding-top: 8rem;
+  background-color: #d9faff;
+  padding-top: 6rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-bottom: 2rem;
+}
+
+.Join .title {
+  text-align: center;
+}
+
+.Join .alert {
+  background-color: green;
+  font-weight: bold;
+  padding: 0;
+  text-align: center;
+  margin-top: 2rem;
+  color: white;
+}
+
+.Join .negative_alert {
+  background-color: red;
+}
+
+.Join .btn {
+  width: 100%;
+  text-align: center;
+  margin-top: 1rem;
+}
+
+@media screen and (min-width: 768px) {
+  .Join {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .Join {
+    padding-top: 8rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .Join {
+    padding-left: 4rem;
+    padding-right: 4rem;
+  }
 }
 /*# sourceMappingURL=Join.css.map */
