@@ -7,13 +7,12 @@ import Contact from "./components/pages/Contact/Contact.jsx";
 import Join from "./components/pages/Join/Join.jsx"
 import PWAPrompt from "react-ios-pwa-prompt";
 import Footer from "./components/layouts/Footer/Footer.jsx";
-import axios from "axios";
+
 
 
 import './App.css';
 
 function App() {
-  axios.defaults.proxy.host = "http://localhost:4000";
   return (
     <div className="container-fluid">
       <Router>

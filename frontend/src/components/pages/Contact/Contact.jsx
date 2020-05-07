@@ -10,11 +10,11 @@ import "./Contact.css";
 
 const Contact = () => {
     // we set proxy in the package.json file to be "http://localhost:5000 so we can just do /email, it will 
-    // automatically build the url as http://localhost:5000/email"
-    //const url = "http://138.68.61.175:4000/email"
+    // automatically build the url as http://localhost:4000/email"
+    // const url = "http://localhost:4000/email";
     const url = "/email";
-    const positiveAlertMessage = "Message Sent"
-    const negativeAlertMessage = "Sorry Something Went Wrong"
+    const positiveAlertMessage = "Message Sent";
+    const negativeAlertMessage = "Sorry Something Went Wrong";
     const [successAlert,setSuccessAlert] = useState(false);
     const [failureAlert, setFailureAlert] = useState(false)
     const [formData, setFormData] = useState({
