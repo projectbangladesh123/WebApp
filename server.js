@@ -19,9 +19,22 @@ const app = express();
  * packaged with express. So we just have to do express.json()
  * to use bodyparser
  */
+
 app.use(express.json({ extended: false }));
+
+// use this when on my pc
+// app.use(function (req, res, next) {
+//   res.header("Access-Control-Allow-Origin", "http://localhost"); // update to match the domain you will make the request from
+//   res.header(
+//     "Access-Control-Allow-Headers",
+//     "Origin, X-Requested-With, Content-Type, Accept"
+//   );
+//   next();
+// });
+
+// use this on produnction
 app.use(function (req, res, next) {
-  res.header("Access-Control-Allow-Origin", "http://localhost"); // update to match the domain you will make the request from
+  res.header("Access-Control-Allow-Origin", "http://138.68.61.175"); // update to match the domain you will make the request from
   res.header(
     "Access-Control-Allow-Headers",
     "Origin, X-Requested-With, Content-Type, Accept"
