@@ -2,6 +2,8 @@
   padding-top: 6rem;
   padding-left: 1rem;
   padding-right: 1rem;
+  background-color: #d9faff;
+  padding-bottom: 2rem;
 
   .alert{
     background-color: green;
@@ -21,7 +23,7 @@
           cursor: pointer;
           color: inherit;
       }
-      margin-bottom: 2rem;
+    //   margin-bottom: 2rem;
       display: flex;
       flex-direction: row;
       align-items: center;
@@ -36,6 +38,7 @@
 
   .connect-us{
       margin-top: 2rem;
+      margin-left: 1rem;
       h1{
           text-align: center;
       }
@@ -52,6 +55,9 @@
     .Contact{
         padding-left: 2rem;
         padding-right: 2rem;
+    }
+    .connect-us{
+        margin-left: 2rem;
     }
 }
 

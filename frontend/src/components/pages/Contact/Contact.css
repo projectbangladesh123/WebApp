@@ -2,6 +2,8 @@
   padding-top: 6rem;
   padding-left: 1rem;
   padding-right: 1rem;
+  background-color: #d9faff;
+  padding-bottom: 2rem;
 }
 
 .Contact .alert {
@@ -18,7 +20,6 @@
 }
 
 .Contact .icons {
-  margin-bottom: 2rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -47,6 +48,7 @@
 
 .Contact .connect-us {
   margin-top: 2rem;
+  margin-left: 1rem;
 }
 
 .Contact .connect-us h1 {
@@ -63,6 +65,9 @@
   .Contact {
     padding-left: 2rem;
     padding-right: 2rem;
+  }
+  .connect-us {
+    margin-left: 2rem;
   }
 }
 

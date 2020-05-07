@@ -28,14 +28,14 @@ const Navigationbar = () => {
                 </Nav> */}
                 {/* Right side nav items */}
                 <Nav className="ml-auto link-items">
-                    <Nav.Link as={Link} to="/about-us" className="nav-item-link">About Us</Nav.Link>
+                    <Nav.Link as={Link} to="/about-us" className="nav-item-link" onClick={() => setExpanded(false)}>About Us</Nav.Link>
                     <Nav.Link as={Link} to="/contact" className="nav-item-link" onClick={() => setExpanded(false)}>Contact</Nav.Link>
                     <Nav.Link  href="#home">
                         <Button variant="outline-dark">
                             Blog
                         </Button>
                     </Nav.Link>
-                    <Nav.Link as = {Link} to = "/join">
+                    <Nav.Link as={Link} to="/join" onClick={() => setExpanded(false)}>
                         <Button variant="outline-dark">
                             Join Us
                         </Button>

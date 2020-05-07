@@ -53,8 +53,8 @@ const Landing = (props) => {
           </Card>
         </div>
         <div className="buttons">
-          <Button variant="primary" as={Link} to="/">Visit Our Blog Site</Button>
-          <Button variant="success" as={Link} to="/join" className="second_button">Join Us</Button>
+          <Button variant="primary" size = "lg" as={Link} to="/">Visit Our Blog Site</Button>
+          <Button variant="success" size = "lg" as={Link} to="/join" className="second_button">Join Us</Button>
           
         </div>
       </section>
