@@ -4,8 +4,11 @@
   padding-right: 1rem;
   background-color: #d9faff;
   padding-bottom: 2rem;
+  .title {
+    text-align: center;
+  }
 
-  .alert{
+  .alert {
     background-color: green;
     font-weight: bold;
     padding: 0;
@@ -14,34 +17,34 @@
     color: white;
   }
 
-  .negative_alert{
-      background-color: red;
+  .negative_alert {
+    background-color: red;
   }
 
-  .icons{
-      a{
-          cursor: pointer;
-          color: inherit;
-      }
+  .icons {
+    a {
+      cursor: pointer;
+      color: inherit;
+    }
     //   margin-bottom: 2rem;
-      display: flex;
-      flex-direction: row;
-      align-items: center;
-      justify-content: center;
-      margin-top: 2rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2rem;
 
-      .icon{
-          margin-right: 2rem;
-          size: 100px;
-      }
+    .icon {
+      margin-right: 2rem;
+      size: 100px;
+    }
   }
 
-  .connect-us{
-      margin-top: 2rem;
-      margin-left: 1rem;
-      h1{
-          text-align: center;
-      }
+  .connect-us {
+    margin-top: 2rem;
+    margin-left: 1rem;
+    h1 {
+      text-align: center;
+    }
   }
 
   .btn {
@@ -52,26 +55,26 @@
 }
 
 @media screen and (min-width: 768px) {
-    .Contact{
-        padding-left: 2rem;
-        padding-right: 2rem;
-    }
-    .connect-us{
-        margin-left: 2rem;
-    }
+  .Contact {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+  .connect-us {
+    margin-left: 2rem;
+  }
 }
 
 @media screen and (min-width: 1024px) {
-    .Contact{
-        padding-top: 8rem;
-        padding-left: 3rem;
-        padding-right: 3rem;
-    }
+  .Contact {
+    padding-top: 8rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
 }
 
 @media screen and (min-width: 1200px) {
-    .Contact{
-        padding-left: 4rem;
-        padding-right: 4rem;
-    }
+  .Contact {
+    padding-left: 4rem;
+    padding-right: 4rem;
+  }
 }

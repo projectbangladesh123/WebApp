@@ -84,6 +84,7 @@ const Contact = () => {
     <div className="Contact">
           <p style={{ display: successAlert ? "block" : "none" }} className="alert">{positiveAlertMessage}</p>
           <p style={{ display: failureAlert ? "block" : "none" }} className="alert negative_alert">{negativeAlertMessage}</p>
+          <h1 className="title">Contact Us</h1>
           <form onSubmit={e => handleSubmit(e)}>
               <div className="form-group">
                   <label for="InputName">Name</label>

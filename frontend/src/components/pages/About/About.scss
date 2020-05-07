@@ -1,0 +1,46 @@
+.About {
+  
+  padding-top: 7rem;
+  text-align: center;
+  h1{
+      background-color: #80eeff;
+      margin-bottom: 0;
+      padding: 1rem;
+      text-transform: capitalize;
+      //font-size: 3rem;
+
+  }
+  p{
+      background-color: #d9faff;
+      padding-top: 1rem;
+      padding-bottom: 1rem;
+      padding: 1rem;
+      margin-bottom: 0;
+      font-size: 20px;
+  }
+}
+
+@media screen and (min-width: 768px){
+    .About{
+        p{
+            padding: 2rem;
+        }
+    }
+}
+
+
+@media screen and (min-width: 1024px) {
+  .About {
+    padding-top: 8rem;
+    p{
+        font-size: 2rem;
+    }
+    h1{
+        font-size: 4rem;
+    }
+  }
+}
+
+@media screen and (min-width: 1200px) {
+
+}

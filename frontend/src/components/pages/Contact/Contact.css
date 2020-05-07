@@ -6,6 +6,10 @@
   padding-bottom: 2rem;
 }
 
+.Contact .title {
+  text-align: center;
+}
+
 .Contact .alert {
   background-color: green;
   font-weight: bold;
