@@ -3,32 +3,38 @@
   .landing {
     position: relative;
     background: url("background.gif") no-repeat center center/cover;
-    height: 50vh;
-    background-position:center;
+    min-height: 60vh;
+    background-position: center;
     // background-size: contain;
     background-size: cover;
-    
-
   }
 
   .landing-inner {
+    padding-top: 2rem;
     color: #fff;
     height: 100%;
     width: 100%;
     margin: auto;
+    text-align: center;
+    // this will make sure that if there are not enough space, the next item will go to next line
+    // flex-wrap: wrap;
+
+    h1 {
+      color: black;
+    }
+  }
+  p {
+    color: black;
+  }
+
+  .images {
     display: flex;
     align-content: center;
     // row means the items will be in a single line
     flex-direction: row;
     align-items: center;
     justify-content: space-evenly;
-    text-align: center;
-    // this will make sure that if there are not enough space, the next item will go to next line
     flex-wrap: wrap;
-
-    h1{
-        font-size: 4rem;
-    }
   }
 
   .dark-overlay {
@@ -40,43 +46,45 @@
     height: 100%;
   }
 
-  .buttons{
+  .buttons {
     margin-top: 2rem;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
-    .second_button{
+    .second_button {
       margin-top: 1rem;
     }
   }
 
-  .rounded_image{
-      border-radius: 50%;
-      width: 100px;
-      margin-right: 1rem;
+  .box {
+    margin-right: 1rem;
   }
 
-  .section_background{
-      background-color: #d9faff;
-      // background: url("background.gif") no-repeat center center/cover;
-      padding-top: 1rem;
-      text-align: center;
-      padding-bottom: 2rem;
-      h1{
-          font-weight: bolder;
-      }
- 
+  .rounded_image {
+    border-radius: 50%;
+    width: 100px;
+    // margin-right: 1rem;
   }
-  
 
-  .events{
-      margin-top: 1rem;
-      display: flex;
-      flex-direction: row;
-      align-items: center;
-      align-content: center;
-      justify-content: center;
+  .section_background {
+    background-color: #d9faff;
+    // background: url("background.gif") no-repeat center center/cover;
+    padding-top: 1rem;
+    text-align: center;
+    padding-bottom: 2rem;
+    h1 {
+      font-weight: bolder;
+    }
+  }
+
+  .events {
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
   }
 
   @media screen and (min-width: 768px) {
@@ -84,16 +92,50 @@
       background-size: cover;
       height: 60vh;
     }
-    .section_background{
-        top: 0;
-        h1{
-            font-size: 3rem;
-        }
+    .section_background {
+      top: 0;
+      h1 {
+        font-size: 3rem;
+      }
     }
   }
-//   @media screen and (min-width: 1200px) {
-//     .landing {
-//       height: 100vh;
-//     }
-//   }
+  //   @media screen and (min-width: 1200px) {
+  //     .landing {
+  //       height: 100vh;
+  //     }
+  //   }
 }
+
+@media screen and (min-width: 411px) {
+  .landing-inner {
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    margin: auto;
+    text-align: center;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .landing-inner {
+    h1{
+      font-size: 4rem;
+      margin-bottom: 2rem;
+    }
+  }
+}
+
+@media screen and (max-width: 359px){
+   .rounded_image {
+    border-radius: 50%;
+    width: 50px;
+    // margin-right: 1rem;
+  }
+  p{
+    font-size: 11px;
+  }
+} 
